@@ -1,0 +1,1 @@
+//// Created by Тимур Ахметзянов on 12.10.2023.//#pragma once#include <fstream>class Line { public:  Line(char* start, char* end): start_(start), end_(end) {}  friend std::ostream& operator<<(std::ostream& out, const Line& line);  auto getEnd() {    return end_;  } private:  char* start_;  char* end_;};

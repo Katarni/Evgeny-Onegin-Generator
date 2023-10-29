@@ -1,0 +1,1 @@
+//// Created by Тимур Ахметзянов on 12.10.2023.//#include "Line.h"std::ostream &operator<<(std::ostream &out, const Line &line) {  auto it = line.start_;  while (it != line.end_) {    out << *it;    ++it;  }  return out;}
